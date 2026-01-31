@@ -4,7 +4,7 @@ using UnityEngine.Windows;
 
 public class MovmentPlayer : MonoBehaviour
 {
-    [SerializeField] private int speed = 100;
+    [SerializeField] private float speed;
     private Vector2 moveInput;
     [SerializeField] private Camera mainCamera;
     [SerializeField] private Camera workCamera;
@@ -21,7 +21,7 @@ public class MovmentPlayer : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        gameObject.transform.position += new Vector3(0, 0, moveInput.x) * speed;
+        gameObject.transform.position += new Vector3(0, 0, moveInput.x) * speed * Time.deltaTime;
     }
 
     public void OnMove(InputAction.CallbackContext ctx)
