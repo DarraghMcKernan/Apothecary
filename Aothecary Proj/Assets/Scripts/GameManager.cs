@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(playerObj.GetComponent<MovmentPlayer>().playerAtDoor &&  Input.GetKeyDown(KeyCode.C))
+        if(playerObj.GetComponent<MovmentPlayer>().playerAtDoor)
         {
             confirmConcotion();
         }

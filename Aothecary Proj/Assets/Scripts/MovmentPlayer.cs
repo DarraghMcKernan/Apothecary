@@ -30,6 +30,9 @@ public class MovmentPlayer : MonoBehaviour
     [SerializeField] private Transform homeDoor;
     public bool playerAtDoor = false;
 
+    [SerializeField] private Transform homeWindow;
+    public bool playerAtWindow = false;
+
     [SerializeField] private float workTableSize = 2;
 
     [SerializeField] private Transform playerTextureTransform;
@@ -100,6 +103,15 @@ public class MovmentPlayer : MonoBehaviour
         else
         {
             playerAtDoor = false;
+        }
+
+        if (transform.position.z <= homeWindow.position.z + workTableSize && transform.position.z >= homeWindow.position.z - workTableSize)
+        {
+            playerAtWindow = true;
+        }
+        else
+        {
+            playerAtWindow = false;
         }
     }
 

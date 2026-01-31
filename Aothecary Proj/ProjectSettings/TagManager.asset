@@ -17,6 +17,7 @@ TagManager:
   - Door
   - LiquidCamera
   - PowderCamera
+  - Window
   layers:
   - Default
   - TransparentFX
