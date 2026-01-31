@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject herbSelector;
     public GameObject liquidSelector;
     public GameObject powderSelector;
+    public GameObject playerObj;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,9 +28,9 @@ public class GameManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if(Input.GetKeyDown(KeyCode.C))
+        if(playerObj.GetComponent<MovmentPlayer>().playerAtDoor)
         {
             confirmConcotion();
         }

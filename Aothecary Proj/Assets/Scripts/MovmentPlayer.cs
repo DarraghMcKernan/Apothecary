@@ -23,6 +23,9 @@ public class MovmentPlayer : MonoBehaviour
     [SerializeField] private Transform liquidTable;
     [SerializeField] private Transform powderTable;
 
+    [SerializeField] private Transform homeDoor;
+    public bool playerAtDoor = false;
+
     [SerializeField] private float workTableSize = 2;
 
     [SerializeField] private Transform playerTextureTransform;
@@ -84,6 +87,15 @@ public class MovmentPlayer : MonoBehaviour
         else
         {
             onPowderTable = false;
+        }
+
+        if (transform.position.z <= homeDoor.position.z + workTableSize && transform.position.z >= homeDoor.position.z - workTableSize)
+        {
+            playerAtDoor = true;
+        }
+        else
+        {
+            playerAtDoor = false;
         }
     }
 
