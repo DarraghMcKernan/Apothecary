@@ -6,14 +6,14 @@ using UnityEngine.InputSystem;
 public class FollowMouse : MonoBehaviour
 {
 
-    [SerializeField] private Camera workbenchCamera;
+    [SerializeField] public Camera workbenchCamera;
     private Vector2 clickMouse;
     private Vector3 worldPos;
     [SerializeField] private float sizeObject = 0.5f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        workbenchCamera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
+        //workbenchCamera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
     }
 
     // Update is called once per frame
