@@ -29,5 +29,6 @@ public class SelectorCollider : MonoBehaviour
         {
             guess = 3;
         }
+        Debug.Log(guess);
     }
 }

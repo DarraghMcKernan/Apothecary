@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(playerObj.GetComponent<MovmentPlayer>().playerAtDoor)
+        if(playerObj.GetComponent<MovmentPlayer>().playerAtDoor &&  Input.GetKeyDown(KeyCode.C))
         {
             confirmConcotion();
         }
@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
         playerConcoction[1] = liquidSelector.GetComponent<SelectorCollider>().guess;
 
         playerConcoction[2] = powderSelector.GetComponent<SelectorCollider>().guess;
+
         winCheck();
     }
 

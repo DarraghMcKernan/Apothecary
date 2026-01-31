@@ -23,6 +23,10 @@ public class MovmentPlayer : MonoBehaviour
     [SerializeField] private Transform liquidTable;
     [SerializeField] private Transform powderTable;
 
+    public GameObject herbSelector;
+    public GameObject liquidSelector;
+    public GameObject powderSelector;
+
     [SerializeField] private Transform homeDoor;
     public bool playerAtDoor = false;
 
@@ -120,6 +124,7 @@ public class MovmentPlayer : MonoBehaviour
             isCamera = false;
             workCamera.enabled = true;
             mainCamera.enabled = false;
+            herbSelector.GetComponent<FollowMouse>().workbenchActive = true;
             return;
             
         }
@@ -129,6 +134,7 @@ public class MovmentPlayer : MonoBehaviour
             isCamera = true;
             workCamera.enabled = false;
             mainCamera.enabled = true;
+            herbSelector.GetComponent<FollowMouse>().workbenchActive = false;
         }
 
         if (isCamera && onLiquidTable)
@@ -137,6 +143,7 @@ public class MovmentPlayer : MonoBehaviour
             isCamera = false;
             liquidCamera.enabled = true;
             mainCamera.enabled = false;
+            liquidSelector.GetComponent<FollowMouse>().workbenchActive = true;
             return;
 
         }
@@ -146,6 +153,7 @@ public class MovmentPlayer : MonoBehaviour
             isCamera = true;
             liquidCamera.enabled = false;
             mainCamera.enabled = true;
+            liquidSelector.GetComponent<FollowMouse>().workbenchActive = false;
         }
 
         if (isCamera && onPowderTable)
@@ -154,6 +162,7 @@ public class MovmentPlayer : MonoBehaviour
             isCamera = false;
             powderCamera.enabled = true;
             mainCamera.enabled = false;
+            powderSelector.GetComponent<FollowMouse>().workbenchActive = true;
             return;
 
         }
@@ -163,6 +172,7 @@ public class MovmentPlayer : MonoBehaviour
             isCamera = true;
             powderCamera.enabled = false;
             mainCamera.enabled = true;
+            powderSelector.GetComponent<FollowMouse>().workbenchActive = false;
         }
     } 
 }
