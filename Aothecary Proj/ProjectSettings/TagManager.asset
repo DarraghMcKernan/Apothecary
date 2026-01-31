@@ -13,6 +13,8 @@ TagManager:
   - Guess1
   - Guess2
   - Guess3
+  - WorkTableHome
+  - Door
   layers:
   - Default
   - TransparentFX
