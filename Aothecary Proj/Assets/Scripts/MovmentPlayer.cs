@@ -9,6 +9,8 @@ public class MovmentPlayer : MonoBehaviour
     [SerializeField] private Camera mainCamera;
     [SerializeField] private Camera workCamera;
     private bool isCamera = true;
+
+    [SerializeField] private Transform playerTextureTransform;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -25,6 +27,14 @@ public class MovmentPlayer : MonoBehaviour
     public void OnMove(InputAction.CallbackContext ctx)
     {
         moveInput = ctx.ReadValue<Vector2>();
+        if(moveInput.x < 0)
+        {
+            playerTextureTransform.localScale = new Vector3(-1, 1, 1);
+        }
+        else
+        {
+            playerTextureTransform.localScale = new Vector3(1, 1, 1);
+        }
         
     }
     public void OnSpace(InputAction.CallbackContext ctx)
