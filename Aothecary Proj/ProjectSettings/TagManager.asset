@@ -7,6 +7,12 @@ TagManager:
   - HerbTable
   - LiquidTable
   - PowderTable
+  - HerbSelection
+  - LiquidSelection
+  - PowderSelection
+  - Guess1
+  - Guess2
+  - Guess3
   layers:
   - Default
   - TransparentFX

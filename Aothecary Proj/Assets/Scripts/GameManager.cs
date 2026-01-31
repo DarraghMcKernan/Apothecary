@@ -11,6 +11,10 @@ public class GameManager : MonoBehaviour
     private List<int> playerConcoction = new List<int>();//the players guesses
     bool cureSuccessful = false;
 
+    public GameObject herbSelector;
+    public GameObject liquidSelector;
+    public GameObject powderSelector;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -25,28 +29,24 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public void playerHerbGuess(int t_herbGuess)
-    {
-        playerConcoction[0] = t_herbGuess;
-    }
-    public void playerLiquidGuess(int t_liquidGuess)
-    {
-        playerConcoction[1] = t_liquidGuess;
-    }
-    public void playerPowderGuess(int t_powderGuess)
-    {
-        playerConcoction[2] = t_powderGuess;
+        if(Input.GetKeyDown(KeyCode.C))
+        {
+            confirmConcotion();
+        }
     }
 
     public void confirmConcotion()
     {
-        WinCheck();
+        playerConcoction[0] = herbSelector.GetComponent<SelectorCollider>().guess;
+        Debug.Log(herbSelector.GetComponent<SelectorCollider>().guess);
+
+        playerConcoction[1] = liquidSelector.GetComponent<SelectorCollider>().guess;
+
+        playerConcoction[2] = powderSelector.GetComponent<SelectorCollider>().guess;
+        winCheck();
     }
 
-    void WinCheck()
+    void winCheck()
     {
         //if player inputs all match symptoms make cure successful true
         if (playerConcoction[0] == symptoms[0] &&
