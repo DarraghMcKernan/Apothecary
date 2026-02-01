@@ -27,6 +27,9 @@ public class StreetCheckWin : MonoBehaviour
                 gameOverSwitchScene.SwapScene();
                 break;
             case 1:
+                int day = PlayerPrefs.GetInt("Day", 1);
+                day++;
+                PlayerPrefs.SetInt("Day", day);
                 winSwitchScene.SwapScene();
                 break;
         }
