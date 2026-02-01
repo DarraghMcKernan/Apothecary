@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public GameObject powderSelector;
     public GameObject playerObj;
 
+    public SwitchScene switchScene;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -57,6 +59,18 @@ public class GameManager : MonoBehaviour
         {
             cureSuccessful = true;
         }
+
+        if (cureSuccessful)
+        {
+            // Save Success State
+            PlayerPrefs.SetInt("Success", 1);
+        }
+        else
+        {
+            // Save Failure State
+            PlayerPrefs.SetInt("Success", 0);
+        }
+        switchScene.SwapScene();
         Debug.Log(cureSuccessful);
     }
 }
