@@ -3,8 +3,22 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    const int symptomCount = 3;
-    private List<int> symptoms = new List<int>();//the games randomly chosen sickness symptoms
+
+    // COughing = Lavendar
+    // Sneezing = Rosemary
+    // Runny Nose = Garlic
+
+    // Blue rash = Rat Blood
+    // red Rash = Green Potion
+    // Purple Rash = Vinegar
+
+    // Cuts in throat = salt
+    // Blisters in throat = pepper
+    // Necrosis in throat = magic powder 
+
+
+    public int symptomCount = 3;
+    public List<int> symptoms = new List<int>();//the games randomly chosen sickness symptoms
     private List<int> herb = new List<int>();
     private List<int> liquid = new List<int>();
     private List<int> powder = new List<int>();
@@ -19,7 +33,7 @@ public class GameManager : MonoBehaviour
     public SwitchScene switchScene;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         for(int i = 0; i < symptomCount; i++)
         {
