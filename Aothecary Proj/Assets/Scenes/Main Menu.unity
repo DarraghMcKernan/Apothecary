@@ -478,6 +478,50 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!1 &1063443082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1063443084}
+  - component: {fileID: 1063443083}
+  m_Layer: 0
+  m_Name: Clear Day Data
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1063443083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063443082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6797a44d0405fcf4dac3475fd8d439d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClearData
+--- !u!4 &1063443084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063443082}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.62964, y: 0, z: -6.15509}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1192282581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,7 +1137,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c97b3ca72d9a32940bf92f962feadac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SwitchScene
-  scene: SampleScene
+  scene: Day Scene
+  startSwap: 0
+  waitSeconds: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1102,3 +1148,4 @@ SceneRoots:
   - {fileID: 41045297}
   - {fileID: 1192282585}
   - {fileID: 1375409241}
+  - {fileID: 1063443084}

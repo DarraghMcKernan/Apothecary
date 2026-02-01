@@ -262,9 +262,9 @@ Transform:
   m_GameObject: {fileID: 117847899}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 5.15, y: 30.765162, z: -4.17}
-  m_LocalScale: {x: 2, y: 1, z: 2}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 5.15, y: 30.59, z: -3.789999}
+  m_LocalScale: {x: 3, y: 1.5, z: 3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 981898524}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -1169,7 +1169,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -1336,7 +1336,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -2064,9 +2064,9 @@ Transform:
   m_GameObject: {fileID: 968657660}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 5.15, y: 30.765162, z: -8.95}
-  m_LocalScale: {x: 2, y: 1, z: 2}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 5.15, y: 30.59, z: -8.57}
+  m_LocalScale: {x: 3, y: 1.5, z: 3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 981898524}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -2647,7 +2647,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 44041e1286014084199811a191194b39, type: 2}
+  - {fileID: 2100000, guid: 7edfa91fa28b4164381ad4c3c80b4473, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3255,7 +3255,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f36e3a6c9dfcfc249bbdbb0ebb7291c7, type: 2}
+  - {fileID: 2100000, guid: 7edfa91fa28b4164381ad4c3c80b4473, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3530,6 +3530,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SwitchScene
   scene: Street
+  startSwap: 0
+  waitSeconds: 1
 --- !u!1 &1794634464
 GameObject:
   m_ObjectHideFlags: 0
@@ -3942,7 +3944,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 18595a3b300bffa4b9d485fec2841f10, type: 2}
+  - {fileID: 2100000, guid: 7edfa91fa28b4164381ad4c3c80b4473, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4188,7 +4190,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -4400,9 +4402,9 @@ Transform:
   m_GameObject: {fileID: 2053725860}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 5.15, y: 30.765162, z: 1.19}
-  m_LocalScale: {x: 2, y: 1, z: 2}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 5.15, y: 30.59, z: 1.5700011}
+  m_LocalScale: {x: 3, y: 1.5, z: 3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 981898524}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
