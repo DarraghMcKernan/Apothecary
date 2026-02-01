@@ -10,41 +10,41 @@ public class Newspaper : MonoBehaviour
     {
         if (gameManager.symptoms[0] == 1)
         {
-            finishedSymptoms += "Sneezing, ";
+            finishedSymptoms += "Sternutatio, ";
         }
         else if(gameManager.symptoms[0] == 2)
         {
-            finishedSymptoms += "Coughing, ";
+            finishedSymptoms += "Tussis, ";
         }
         else if (gameManager.symptoms[0] == 3)
         {
-            finishedSymptoms += "Runny Nose, ";
+            finishedSymptoms += "Nasus Fluens, ";
         }
 
         if (gameManager.symptoms[1] == 1)
         {
-            finishedSymptoms += "Red Rashes, ";
+            finishedSymptoms += "Eruptiones rubrae, ";
         }
         else if (gameManager.symptoms[1] == 2)
         {
-            finishedSymptoms += "Blue Rash, ";
+            finishedSymptoms += "Eruptio caerulea, ";
         }
         else if (gameManager.symptoms[1] == 3)
         {
-            finishedSymptoms += "Purple Rash, ";
+            finishedSymptoms += "Eruptio purpurea, ";
         }
 
         if (gameManager.symptoms[2] == 1)
         {
-            finishedSymptoms += "and Necrosis in Throat.";
+            finishedSymptoms += "and Necrosis in Gutture.";
         }
         else if (gameManager.symptoms[2] == 2)
         {
-            finishedSymptoms += "and Blisters in Throat.";
+            finishedSymptoms += "and Vesicae in Gutture.";
         }
         else if (gameManager.symptoms[2] == 3)
         {
-            finishedSymptoms += "and Cuts in Throat.";
+            finishedSymptoms += "and Sectiones in Gutture.";
         }
 
         newsText.text = finishedSymptoms;
